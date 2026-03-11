@@ -1,0 +1,25 @@
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.label {
+  background: var(--accent);
+  color: var(--bg-primary);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.value {
+  color: var(--accent);
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
