@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+}
+
+.toggleSci {
+  font-size: 0.75rem;
+  background: var(--btn-function-bg);
+  color: var(--btn-function-text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+.toggleSci:hover {
+  background: var(--btn-function-hover);
+}
+
+.toggleSci.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.scientificGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+@media (max-width: 420px) {
+  .scientificGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
