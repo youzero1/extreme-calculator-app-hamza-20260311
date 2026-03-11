@@ -1,0 +1,93 @@
+.btn {
+  padding: 0;
+  height: 52px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s, transform 0.08s, box-shadow 0.12s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  outline: none;
+  user-select: none;
+  min-width: 0;
+}
+
+.btn:active {
+  transform: scale(0.94);
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+/* number */
+.number {
+  background: var(--btn-number-bg);
+  color: var(--btn-number-text);
+}
+.number:hover {
+  background: var(--btn-number-hover);
+}
+
+/* operator */
+.operator {
+  background: var(--btn-operator-bg);
+  color: var(--btn-operator-text);
+}
+.operator:hover {
+  background: var(--btn-operator-hover);
+}
+
+/* function */
+.function {
+  background: var(--btn-function-bg);
+  color: var(--btn-function-text);
+  font-size: 0.78rem;
+}
+.function:hover {
+  background: var(--btn-function-hover);
+}
+
+/* constant */
+.constant {
+  background: var(--btn-constant-bg);
+  color: var(--btn-constant-text);
+  font-size: 0.85rem;
+}
+.constant:hover {
+  background: var(--btn-constant-hover);
+}
+
+/* memory */
+.memory {
+  background: var(--btn-memory-bg);
+  color: var(--btn-memory-text);
+  font-size: 0.8rem;
+}
+.memory:hover {
+  background: var(--btn-memory-hover);
+}
+
+/* action */
+.action {
+  background: var(--btn-action-bg);
+  color: var(--btn-action-text);
+}
+.action:hover {
+  background: var(--btn-action-hover);
+}
+
+/* equals */
+.equals {
+  background: var(--btn-equals-bg);
+  color: var(--btn-equals-text);
+  font-size: 1.3rem;
+}
+.equals:hover {
+  background: var(--btn-equals-hover);
+  box-shadow: 0 4px 16px var(--accent-shadow);
+}
