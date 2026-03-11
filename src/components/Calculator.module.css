@@ -1,0 +1,94 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--bg-secondary);
+}
+
+.calculator {
+  width: 100%;
+  max-width: 480px;
+  background: var(--bg-primary);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.historyBtn {
+  font-size: 0.78rem;
+  background: var(--btn-secondary-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.historyBtn:hover {
+  background: var(--btn-hover);
+  color: var(--text-primary);
+}
+
+.historyCount {
+  background: var(--accent);
+  color: white;
+  border-radius: 10px;
+  padding: 1px 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 0;
+    align-items: flex-start;
+  }
+  .calculator {
+    border-radius: 0;
+    min-height: 100vh;
+    box-shadow: none;
+  }
+}
